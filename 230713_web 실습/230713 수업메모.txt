@@ -39,12 +39,15 @@ vscode는 재시작 -> 터미널 -> 메뉴에서 선택가능(단축키:ctrl+shi
 git add. : 현재 작업
 꼭 commit 전에 해야함
 
+git config --global user.email "eastok95@gmail.com"
+git config --global user.name "eastok"
+
 echo "# aja-eastok" >> README.md
 git init
 git add README.md
 git add.
 git commit -m "first commit"
-git branch -M main
+git branch -M home
 git remote add origin https://github.com/eastok/aja-eastok.git
 git push -u origin main
 
@@ -54,7 +57,7 @@ git push -u origin main
 2) 로컬의 저장소에서, git의 숨김 폴더를 찾아 삭제하고, 
 3) 다시 초기화 작업을 선택. (지금은 테스트, 변경 작업이 몇개 없어서)
 
-4-3 명령어를 복붙 후, 천 에러가 나왔고, 기념적(앞으로 계속 마주하게 되는 상황임.)
+4-3 명령어를 복붙 후, 첫 에러가 나왔고, 기념적(앞으로 계속 마주하게 되는 상황임.)
 구글링 결과 계정을 등록하는 명령어가 필요.
 출처
 https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=skghtjd10&logNo=220496619106

@@ -3,57 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>플로트</title>
+    <title>포지션</title>
+    <!-- 스타일.css파일을 링크함 -->
+    <link rel="stylesheet" href="style.css" />
     <style>
-      .container {
-        max-width: 940px;
-        margin-left: auto;
-        margin-right: auto;
+      /* 포지션 속성을 이용해 그림과 글자를 겹치게 */
+      img {
+        max-width: 100%;
+        height: auto;
       }
-      .content-area {
-        border-top: 3px solid black;
-        border-bottom: 3px solid black;
+      /* 오버레이 */
+      .image-banner {
+        /* 상대좌표(원래위치에서 이동) */
+        position: relative; /*기준*/
+        left: 100px;
+        /* bottom: 100px; */
       }
-      .main-area {
-        width: 66%;
-        float: left;
-      }
-      .sidebar {
-        width: 34%;
-        float: left;
-      }
-      .fix {
-        clear: both;
-      }
-
-      /* 네이게이션 메뉴 */
-      .site-nav {
-        margin-top: 20px;
-      }
-      /* 리스트 고유의 마진 패딩을 없애서 쉽게 스타일 할 수 있음 */
-      .site-nav ul {
-        margin: 0;
-        padding: 0;
-      }
-      .site-nav li {
-        list-style: none;
-        float: left;
-        margin-right: 5px;
-      }
-      .site-nav a {
+      .image-banner img {
+        /* 이미지태그는 원래 인라인인데 block으로 수정하는작업 */
         display: block;
-        color: #617140;
-        text-decoration: none;
-        padding: 10px 20px;
-        border: 3px solid #e5e9dc;
-        border-bottom: none;
       }
-
-      .site-nav a:hover {
-        background-color: #e5e9dc;
+      /* 이미지와 겹치게 할 글 상자 */
+      .banner-description {
+        /* 절대좌표 포지션으로 바꾸어 기준에 맞춤 */
+        position: absolute;
+        /* top:40%; */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.65);
+        padding: 15px 25px;
       }
     </style>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
@@ -71,14 +54,24 @@
         </ul>
       </nav>
 
-      <div style="clear: both" class="content-area">
+      <div style="clear: both"></div>
+      <div class="content-area">
         <main class="main-area">
+          <h2>Main Column Heading</h2>
           <p>
             This is main. Lorem ipsum dolor sit amet, consectetur adipisicing
             elit. Excepturi deleniti quod numquam? Quam, facilis impedit? Quam
             possimus numquam commodi culpa, corporis blanditiis eaque harum
             quaerat ratione animi magnam! Quas, a.
           </p>
+
+          <div class="image-banner">
+            <img src="monkey.webp" alt="고양이" />
+            <div class="banner-description">
+              <p>그래서 이제 뭐함</p>
+            </div>
+          </div>
+
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
             quo quam expedita vero adipisci similique deleniti fugit maiores
@@ -97,7 +90,6 @@
         </aside>
 
         <div class="fix"></div>
-        <!-- <div style="clear: both"></div> -->
       </div>
       <footer>
         <p>&copy; 2021 - This is the footer.</p>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        background-color: #869960;
+      }
+
+      body {
+        font-family: Tahoma, sans-serif;
+        font-size: 87%;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .container {
+        width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-sizing: border-box;
+      }
+
+      header {
+        padding-top: 20px;
+        color: #617140;
+      }
+
+      header h1 {
+        margin: 0;
+        font-weight: normal;
+        font-size: 165%;
+      }
+
+      header p {
+        margin: 0;
+      }
+
+      /* Site Navigation */
+      .site-nav {
+        margin-top: 20px;
+      }
+
+      .site-nav ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .site-nav li {
+        list-style: none;
+        float: left;
+        margin-right: 5px;
+      }
+
+      .site-nav a {
+        display: block;
+        color: #617140;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 3px solid #e5e9dc;
+        border-bottom: none;
+      }
+
+      .site-nav a:hover {
+        background-color: #e5e9dc;
+      }
+
+      /* End Site Navigation */
+
+      .content-area {
+        border-top: 3px solid #e5e9dc;
+        border-bottom: 3px solid #e5e9dc;
+      }
+
+      .main-area {
+        width: 66%;
+        float: left;
+        padding-right: 40px;
+        box-sizing: border-box;
+      }
+
+      .sidebar {
+        width: 34%;
+        float: left;
+        background-color: #e5e9dc;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        font-size: 85%;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 85%;
+        color: #999;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+
+      .fix {
+        clear: both;
+      }
+
+      .group:before,
+      .group:after {
+        content: "";
+        display: table;
+      }
+
+      .group:after {
+        clear: both;
+      }
+
+      .group {
+        zoom: 1;
+      }
+      /* 테이블 스타일 */
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .col-item-name {
+        width: 60%;
+      }
+
+      .col-quantity,
+      .col-price {
+        width: 20%;
+      }
+
+      table th {
+        text-align: left;
+        background-color: #869960;
+        color: #fff;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+      }
+      /* 각각의 셀에 보더를 넣기 */
+      table th,
+      table td {
+        border: 1px solid #869960;
+        padding: 10px;
+        vertical-align: top;
+      }
+      /* :nth-child()는 앞의 태그들 중 선택, even은 짝수 odd홀수 */
+      table tbody tr:nth-child(even) td {
+        background-color: #e5e9dc;
+      }
+      /* 
+      table tbody tr:nth-child(even) td {
+        text-align: center;
+      } */
+
+      table.grocery-list tr :nth-child(2),
+      table.grocery-list tr :nth-child(3) {
+        text-align: center;
+      }
+
+      table tbody tr:hover td {
+        background-color: #e6dce9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Website Title</h1>
+        <p>Website slogan included here.</p>
+
+        <nav class="site-nav">
+          <ul class="group">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content-area group">
+        <div class="main-area">
+          <h2>Main Column Heading</h2>
+
+          <p>
+            This is the main area (or column). Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex.
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th class="col-item-name">Item Name</th>
+                <th class="col-quantity">Quantity</th>
+                <th class="col-price">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-item-name">Oranges</td>
+                <td class="col-quantity">5</td>
+                <td>$3.00</td>
+              </tr>
+              <tr>
+                <td class="col-item-name">Celery</td>
+                <td class="col-quantity">2</td>
+                <td class="col-price">$2.50</td>
+              </tr>
+              <tr>
+                <td class="col-item-name">Garlic</td>
+                <td class="col-quantity">2</td>
+                <td class="col-price">$1.90</td>
+              </tr>
+              <tr>
+                <td class="col-item-name">Bananas</td>
+                <td class="col-quantity">6</td>
+                <td class="col-price">$2.99</td>
+              </tr>
+              <tr>
+                <td class="col-item-name">Onions</td>
+                <td class="col-quantity">4</td>
+                <td class="col-price">$3.00</td>
+              </tr>
+              <tr>
+                <td class="col-item-name">
+                  Very long awkwardly named yet still delicious item here
+                </td>
+                <td class="col-quantity">4</td>
+                <td class="col-price">$3.00</td>
+              </tr>
+              <tr>
+                <td class="col-item-name">Carrots</td>
+                <td class="col-quantity">12</td>
+                <td class="col-price">$2.99</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. In
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <aside class="sidebar">
+          <p>
+            This is the sidebar. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu.
+          </p>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; 2021 - This is the footer.</p>
+      </footer>
+    </div>
+  </body>
+</html>

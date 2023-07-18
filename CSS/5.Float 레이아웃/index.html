@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플로트</title>
+    <style>
+      .container {
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .content-area {
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+      }
+      .main-area {
+        width: 66%;
+        float: left;
+      }
+      .sidebar {
+        width: 34%;
+        float: left;
+      }
+      .fix {
+        clear: both;
+      }
+
+      /* 네이게이션 메뉴 */
+      .site-nav {
+        margin-top: 20px;
+      }
+      /* 리스트 고유의 마진 패딩을 없애서 쉽게 스타일 할 수 있음 */
+      .site-nav ul {
+        margin: 0;
+        padding: 0;
+      }
+      .site-nav li {
+        list-style: none;
+        float: left;
+        margin-right: 5px;
+      }
+      .site-nav a {
+        display: block;
+        color: #617140;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 3px solid #e5e9dc;
+        border-bottom: none;
+      }
+
+      .site-nav a:hover {
+        background-color: #e5e9dc;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Website Title</h1>
+        <p>Website slogan included here.</p>
+      </header>
+
+      <nav class="site-nav">
+        <ul class="group">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div style="clear: both" class="content-area">
+        <main class="main-area">
+          <p>
+            This is main. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Excepturi deleniti quod numquam? Quam, facilis impedit? Quam
+            possimus numquam commodi culpa, corporis blanditiis eaque harum
+            quaerat ratione animi magnam! Quas, a.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+            quo quam expedita vero adipisci similique deleniti fugit maiores
+            odio quas repellat neque, veritatis molestiae accusamus, porro
+            accusantium temporibus tempora sapiente!
+          </p>
+        </main>
+
+        <aside class="sidebar">
+          <p>
+            This is sidebar. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Asperiores est modi amet nesciunt repellendus quis maiores
+            expedita distinctio deserunt fugiat, sit laboriosam aspernatur
+            labore rem dolore hic nulla laborum qui.
+          </p>
+        </aside>
+
+        <div class="fix"></div>
+        <!-- <div style="clear: both"></div> -->
+      </div>
+      <footer>
+        <p>&copy; 2021 - This is the footer.</p>
+      </footer>
+    </div>
+  </body>
+</html>

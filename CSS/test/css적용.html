@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포지션</title>
+    <!-- 스타일.css파일을 링크함 -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* 포지션 속성을 이용해 그림과 글자를 겹치게 */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      /* 오버레이 */
+      .image-banner {
+        /* 상대좌표(원래위치에서 이동) */
+        position: relative; /*기준*/
+        left: 100px;
+        /* bottom: 100px; */
+      }
+      .image-banner img {
+        /* 이미지태그는 원래 인라인인데 block으로 수정하는작업 */
+        display: block;
+      }
+      /* 이미지와 겹치게 할 글 상자 */
+      .banner-description {
+        /* 절대좌표 포지션으로 바꾸어 기준에 맞춤 */
+        position: absolute;
+        /* top:40%; */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.65);
+        padding: 15px 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Website Title</h1>
+        <p>Website slogan included here.</p>
+      </header>
+
+      <nav class="site-nav">
+        <ul class="group">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div style="clear: both"></div>
+      <div class="content-area">
+        <main class="main-area">
+          <h2>Main Column Heading</h2>
+          <p>
+            This is main. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Excepturi deleniti quod numquam? Quam, facilis impedit? Quam
+            possimus numquam commodi culpa, corporis blanditiis eaque harum
+            quaerat ratione animi magnam! Quas, a.
+          </p>
+
+          <div class="image-banner">
+            <img src="monkey.webp" alt="고양이" />
+            <div class="banner-description">
+              <p>그래서 이제 뭐함</p>
+            </div>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+            quo quam expedita vero adipisci similique deleniti fugit maiores
+            odio quas repellat neque, veritatis molestiae accusamus, porro
+            accusantium temporibus tempora sapiente!
+          </p>
+        </main>
+
+        <aside class="sidebar">
+          <p>
+            This is sidebar. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Asperiores est modi amet nesciunt repellendus quis maiores
+            expedita distinctio deserunt fugiat, sit laboriosam aspernatur
+            labore rem dolore hic nulla laborum qui.
+          </p>
+        </aside>
+
+        <div class="fix"></div>
+      </div>
+      <footer>
+        <p>&copy; 2021 - This is the footer.</p>
+      </footer>
+    </div>
+  </body>
+</html>

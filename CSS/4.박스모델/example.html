@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>예제</title>
+    <style>
+      div {
+        display: block;
+        background-color: cornflowerblue;
+        border: 10px solid black;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+      }
+      span {
+        /* 인라인에는 가로세로 길이 적용안됨 */
+        display: inline;
+        background-color: coral;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        border: 10px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>블럭 vs 인라인</h1>
+
+    <h2>블럭</h2>
+    <div></div>
+    <div></div>
+    <div></div>
+    <ul>
+      <li>한 줄에 하나씩 쌓임</li>
+      <li>가로와 세로 길이를 가짐</li>
+      <li>화면 배치를 위해 사용</li>
+    </ul>
+
+    <h2>인라인</h2>
+    <span>A</span>
+    <span>BB</span>
+    <span>CCC</span>
+    <ul>
+      <li>한 줄에 여러 요소가 나옴</li>
+      <li>가로 세로 길이 직접 X. 내용물의 크기 만큼을 가짐</li>
+      <li>텍스트를 꾸밀 때, 사용</li>
+    </ul>
+  </body>
+</html>

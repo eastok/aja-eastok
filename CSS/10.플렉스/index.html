@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      html,
+      body {
+        background-color: #ffeead;
+        margin: 10px;
+      }
+      .container > div {
+        padding: 10px;
+        text-align: center;
+        font-size: 2em;
+        color: #ffeead;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        border: 5px solid #ffcc5f;
+        flex-wrap: wrap;
+      }
+      .home {
+        background-color: #96ceb4;
+        margin-right: auto;
+        flex: 1;
+        order: 2;
+      }
+      .search {
+        background-color: #ff6f69;
+        flex: 3;
+        order: 1;
+      }
+      .logout {
+        background-color: skyblue;
+        flex: 1;
+        order: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="home">home</div>
+      <div class="search">search</div>
+      <div class="logout">logout</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 스타일</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Single+Day&display=swap");
+
+      html {
+        background-color: #869960;
+      }
+
+      body {
+        font-family: "맑은 고딕", 돋움, 굴림, sans-serif;
+        font-size: 87%;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .container {
+        width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-sizing: border-box;
+      }
+
+      header {
+        padding-top: 20px;
+        color: #617140;
+      }
+
+      header h1 {
+        font-family: "Black han Sans", sans-serif;
+        margin: 0;
+        font-weight: normal;
+        font-size: 165%;
+      }
+
+      header p {
+        margin: 0;
+      }
+
+      /* Site Navigation */
+      .site-nav {
+        font-family: "Single day", sans-serif;
+        margin-top: 20px;
+      }
+
+      .site-nav ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .site-nav li {
+        list-style: none;
+        float: left;
+        margin-right: 5px;
+      }
+
+      .site-nav a {
+        display: block;
+        color: #617140;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 3px solid #e5e9dc;
+        border-bottom: none;
+      }
+
+      .site-nav a:hover {
+        background-color: #e5e9dc;
+      }
+
+      /* End Site Navigation */
+
+      .content-area {
+        border-top: 3px solid #e5e9dc;
+        border-bottom: 3px solid #e5e9dc;
+      }
+
+      .main-area {
+        width: 66%;
+        float: left;
+        padding-right: 40px;
+        box-sizing: border-box;
+      }
+
+      /* form-style 시작*/
+
+      .sidebar {
+        width: 34%;
+        float: left;
+        background-color: #e5e9dc;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        font-size: 85%;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 85%;
+        color: #999;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+
+      .fix {
+        clear: both;
+      }
+
+      .group:before,
+      .group:after {
+        content: "";
+        display: table;
+      }
+
+      .group:after {
+        clear: both;
+      }
+
+      .group {
+        zoom: 1;
+      }
+
+      form {
+        background-color: #ececec;
+        padding: 30px 40px;
+      }
+
+      .hidden-label {
+        display: none;
+        /* position: absolute;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        visibility: hidden; */
+      }
+
+      input,
+      select {
+        font-family: "맑은 고딕";
+        font-size: 100%;
+      }
+
+      select {
+        /* 모서리 둥근정도 */
+        border-radius: 0%;
+      }
+
+      input[type="email"],
+      input[type="password"],
+      select {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        padding: 0 10px;
+        height: 40px;
+        margin-bottom: 15px;
+        border: 1px solid #cdcdcd;
+        outline: none;
+      }
+
+      /* :focus는 입력하기 위해 클릭 시 */
+      input[type="email"]:focus,
+      input[type="password"]:focus,
+      select:focus {
+        border: 1px solid #869960;
+        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.13);
+      }
+      input[type="submit"] {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        background-color: #869960;
+        color: #fff;
+        padding: 10px 0;
+        border: 1px solid #798a56;
+        border-radius: 3px;
+        outline: none;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover,
+      input[type="submit"]:focus {
+        border: 1px solid #535e3b;
+        background-color: crimson;
+      }
+      .checkbox-text {
+        font-size: 85%;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>웹사이트 제목</h1>
+        <p>웹사이트 설명하는 내용!</p>
+
+        <nav class="site-nav">
+          <ul class="group">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">어바웃</a></li>
+            <li><a href="#">포트폴리오</a></li>
+            <li><a href="#">연락처</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content-area group">
+        <div class="main-area">
+          <h2>Main Column Heading</h2>
+
+          <p>
+            This is the main area (or column). Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex.
+          </p>
+
+          <form>
+            <label class="hidden-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="이메일 입력"
+            />
+
+            <label class="hidden-label" for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="패스워드 입력"
+            />
+
+            <select>
+              <option>수박</option>
+              <option>사과</option>
+              <option>배</option>
+              <option>포도</option>
+            </select>
+
+            <input type="submit" value="로그인" />
+
+            <label>
+              <input
+                type="checkbox"
+                name="remember"
+                checked="checked"
+                value="yes"
+              />
+              <span class="checkbox-text">로그인 정보저장</span>
+            </label>
+          </form>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. In
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <aside class="sidebar">
+          <p>
+            This is the sidebar. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu.
+          </p>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; 2021 - This is the footer.</p>
+      </footer>
+    </div>
+  </body>
+</html>

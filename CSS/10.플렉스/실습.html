@@ -56,17 +56,14 @@
   flex: 5;
   order: 2;
 }
-
 .sidebar-one {
   flex: 1;
   order: 1;
 }
-
 .sidebar-two {
   flex: 1;
   order: 3;
 }
-
 /* 3 */
 .call-outs-container{
   max-width: 1400px;
@@ -118,6 +115,48 @@
   font-weight: bold;
   font-size: 60px;
   margin-bottom: 20px;
+}
+/* 5 */
+.banner {
+  height: 400px;
+  max-width: 700px;
+  margin: 40px auto 40px auto;
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-me {
+  color: white;
+  font-size: 50px;
+  margin: auto;
+}
+/* 6 */
+.equal-height-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+.first {
+  background-color: #FFF;
+  padding: 20px;
+  flex: 1;
+}
+.second {
+  background-color: yellow;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.second-a {
+  background-color: #c0dbe2;
+  flex: 1;
+  flex-direction: column;
+}
+.second-b {
+  background-color: #cdf1c3;
+  flex: 1;
+  flex-direction: column;
 }
     </style>
   </head>
@@ -177,6 +216,32 @@
   <div class="fixed-size">3</div>
   <div class="fixed-size">4</div>
   <div class="fixed-size">5</div>
+</div>
+<!-- 5 -->
+<div class="banner">
+  <div class="center-me">가운데</div>
+</div> 
+<!-- sixth example -->
+<div class="equal-height-container">
+  <div class="first">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi similique amet voluptatem molestiae
+      nostrum ab nesciunt blanditiis repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi doloribus
+      quo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam, veritatis ducimus, vero magnam hic
+      quia pariatur asperiores laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi iusto ullam error
+      reiciendis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi similique amet voluptatem molestiae
+      nostrum ab nesciunt blanditiis repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi doloribus
+      quo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quisquam, veritatis ducimus, vero magnam hic
+      quia pariatur asperiores laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi iusto ullam error
+      reiciendis.</p>
+  </div>
+
+  <div class="second">
+    <div class="second-a">A</div>
+    <div class="second-b">B</div>
+  </div>
 </div>
   </body>
 </html>

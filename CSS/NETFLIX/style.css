@@ -79,7 +79,7 @@ form .form-control {
   transition: all 0.1s ease;
 }
 .form-control input:is(:focus, :valid) ~ label {
-  font-size: 0.75rem;
+  font-size: 0cqw;
   transform: translateY(-130%);
 }
 form button {

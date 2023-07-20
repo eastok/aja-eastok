@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        background-color: black;
+      }
+      .container {
+        max-width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .title {
+        background-color: #fff;
+        padding: 20px;
+        flex: 1;
+      }
+      .bot {
+        background-color: yellow;
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+      }
+      .sidebar {
+        background-color: #c0dbe2;
+        flex: 1;
+        justify-content: flex-start;
+      }
+      .gallery {
+        background-color: #cdf1c3;
+        flex: 1;
+        justify-content: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <img src="images/logo.png" />
+        <h1>Pic & Vid</h1>
+      </div>
+      <div class="bot">
+        <div class="sidebar">A</div>
+        <div class="gallery">B</div>
+      </div>
+    </div>
+  </body>
+</html>

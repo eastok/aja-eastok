@@ -19,12 +19,14 @@ html {
 }
 .title {
   background-color: #ffeead;
-  height: 150px;
-  flex: 1;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 h1 {
+  padding-left: 20px;
   text-align: center;
-  margin-top: 50px;
 }
 
 .bot {
@@ -46,7 +48,8 @@ h1 {
 }
 /* 리스트 고유의 마진 패딩을 없애서 쉽게 스타일 할 수 있음 */
 .site-nav ul {
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   list-style: none;
 }
@@ -61,9 +64,10 @@ h1 {
 /* 이미지 갤러리 스타일링 */
 .gallery {
   background-color: ivory;
-  flex: 4;
+  flex: 7;
   padding-left: 20px;
   padding-top: 20px;
+  padding-right: 20px;
   justify-content: flex-start;
 }
 .gallery .images {

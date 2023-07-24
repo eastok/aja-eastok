@@ -1,19 +1,23 @@
-const allImages = document.querySelectorAll(".images .?");
-const lightbox = document.querySelector(".?");
-const closeImgBtn = lightbox.querySelector(".?");
-allImages.forEach(img => {
-    // 이미지 클릭 이벤트시 그 이미지의 주소(src)를 빈 라이트 박스에 전달
-    img.addEventListener("click", () => showLightbox(img.querySelector("img").?));
+//모든 이미지박스
+const allImages = document.querySelectorAll(".images .img");
+const lightbox = document.querySelector(".lightbox");
+const closeImgBtn = lightbox.querySelector(".close-icon");
+
+//모든 이미지박스ㅔ 클릭시 그 이미지의 주소를 라이트박스에 전달!
+allImages.forEach(function (img) {
+  img.addEventListener("click", function () {
+    showLightbox(img.querySelector("img").src);
+  });
 });
-// 이미지 주소를 받아서 라이트 박스에 표시한다. (평상시엔 안보임 show 클래스 추가하기)
-const showLightbox = (img) => {
-    
-    lightbox.querySelector("img").src = img;
-    lightbox.classList.add("?");
-    document.body.style.overflow = "hidden";
+
+function showLightbox(imgPath) {
+  lightbox.querySelector("img").src = imgPath;
+  lightbox.classList.add("show");
+  document.body.style.overflow = "hidden";
 }
-closeImgBtn.addEventListener("click", () => {
-    // 종료 버튼 클릭시 라이트 박스 종료
-    lightbox.classList.remove("?");
-    document.body.style.overflow = "auto";
+
+closeImgBtn.addEventListener("click", function () {
+  // 종료 버튼 클릭시 라이트 박스 종료
+  lightbox.classList.remove("show");
+  document.body.style.overflow = "auto";
 });

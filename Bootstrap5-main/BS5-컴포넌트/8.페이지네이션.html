@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Bootstrap 5 Basics</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <!-- NORMAL PAGINATION -->
+
+      <nav>
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <!-- <li class="page-item disabled"> disabled가 있으면 클릭이 안됨 -->
+            <a href="#" class="page-link">이전</a>
+          </li>
+          <!-- 실제 페이지 번호 -->
+          <!-- 현재페이지 = active -->
+          <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">4</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">5</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">다음</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- LARGE PAGINATION -->
+
+      <nav>
+        <ul class="pagination pagination-lg">
+          <li class="page-item disabled">
+            <a href="#" class="page-link">◀</a>
+          </li>
+          <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">▶</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- SMALL PAGINATION -->
+
+      <nav>
+        <ul class="pagination pagination-sm">
+          <li class="page-item disabled">
+            <a href="#" class="page-link">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</html>
